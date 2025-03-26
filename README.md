@@ -1,4 +1,4 @@
-Integrantes da dupla
+# Integrantes da dupla
 
-João Victor Lazarini da Fonseca
-Luiz Guilherme Barcelos dos Santos
+## João Victor Lazarini da Fonseca
+## Luiz Guilherme Barcelos dos Santos
