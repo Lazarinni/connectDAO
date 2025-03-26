@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            border: 0px;
+            margin: opx;
+        }
+
+        input {
+            width: 410px;
+            height:25px;
+            border-radius: 3%;
+        }
+
+        .container{
+            margin-top: 25px;
+            margin-left: 120px;
+            margin-right: 100px;
+            border: 2px solid #b57b7b;
+            padding-top: 30px;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .buttons {
+            border-radius: 10%;
+            color: rgb(230, 148, 42);
+            background-color: rgb(30, 77, 118);
+            height: 35px;
+            width: 100px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;           
+            background-color: #b57b7b;
+            border:1px solid #b57b7b;           
+            gap: 15px;
+        }
+         
+    </style>
+    <script src="api.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="grupo-buttons">
+            <button type="submit" id="salvar" onclick="clienteDados('POST')" class="buttons">Salvar</button>
+            <button type="submit" id="buscar" onclick="clienteDados('GET')" class="buttons">Buscar</button>
+            <button type="submit" id="alterar" onclick="clienteDados('PUT')" class="buttons">Alterar</button>
+            <button type="submit" id="apagar" onclick="clienteDados('DELETE')" class="buttons">Apagar</button>
+        </div>
+        <div class="form">
+            Id:<input type="number" id="id" placeholder="id">
+            Nome:<input type="text" id="nome" placeholder="Insirar seu nome">
+            E-mail:<input type="text" id="email" placeholder="Digite seu E-mail">
+        </div>
+    </div>
+</body>
+</html>
